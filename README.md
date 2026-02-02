@@ -1,1 +1,184 @@
-# ccj-webpage-v2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kozhikode Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    min-height: 85vh;
+    gap: 40px;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                      url('lesin-abdulla-ziacp8PI9RY-unsplash.jpg');
+    background-size: cover;      
+    background-position: center; 
+}
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0; padding: 0;
+            line-height: 1.6; color: #333;
+        }
+
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 8%; background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .blog { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: #333; }
+        .nav-items a { text-decoration: none; color: #555; margin-left: 20px; transition: 0.3s; }
+        .nav-items a:hover { color: #007bff; }
+
+        .home {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 50px 8%; min-height: 80vh; gap: 40px;
+        }
+
+        .intro { flex: 1; }
+        .intro h1 { font-size: 3rem; margin-bottom: 20px; }
+        .read-more-btn {
+            display: inline-block; padding: 12px 30px;
+            background-color: #007bff; color: white;
+            text-decoration: none; border-radius: 5px; font-weight: 600;
+        }
+
+        /* Slideshow Container */
+        .hero-image {
+            flex: 1;
+            position: relative;
+            max-width: 500px;
+            height: 350px; 
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .slide {
+            display: none; 
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Fade Animation */
+        .fade {
+            animation: fadeAnim 1.5s;
+        }
+
+        @keyframes fadeAnim {
+            from { opacity: 0.4; } 
+            to { opacity: 1; }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="blog">Kozhikode</a>
+        <nav class="nav">
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>  
+            </div>                 
+        </nav>
+    </header>
+
+    <section class="home">
+      <div class="intro">
+    <h1>The Gateway to the <br><span style="color: #007bff;">Malabar Coast.</span></h1>
+            <p>
+                Nestled on the sun-drenched Malabar Coast of Kerala, Kozhikode (formerly Calicut) is a city that breathes history and flavor in equal measure. Once the legendary "City of Spices" that lured explorers like Vasco da Gama to its shores in 1498, it has evolved into India’s first UNESCO City of Literature.
+                <br><br>
+                Whether you're strolling down the skeletal piers of Kozhikode Beach or diving into a plate of world-famous Malabar Biryani, Kozhikode is a sensory journey through time.
+            </p>
+
+    <a href="https://en.wikivoyage.org/wiki/Kozhikode" target="_blank" class="read-more-btn">Read more</a>
+</div>
+
+        <div class="hero-image">
+            <div class="slide fade">
+                <img src="aswin-p-s-9_XgDC7wPyQ-unsplash.jpg" alt="Kozhikode Beach">
+            </div>
+            <div class="slide fade">
+                <img src="arun-geetha-viswanathan-GlKCOpHMSNs-unsplash.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="faras-vv-hOWv7eUuHf4-unsplash.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="fazil-abi-GHudLAdd0cI-unsplash.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="asif-asharaf-dPsIGTnVcy4-unsplash.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="snappigram-yCMwdD68Ofk-unsplash.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="Mishkal-mosque-Calicut.jpg" alt="Malabar Coast">
+            </div>
+            <div class="slide fade">
+                <img src="Tali_Subramanya_Temple,_Chalappuram,_Kozhikode.1.jpg" alt="Kerala Backwaters">
+            </div>
+             <div class="slide fade">
+                <img src="sulffi-a-1l6XYCXKx18-unsplash.jpg" alt="Kerala Backwaters">
+            </div>
+             <div class="slide fade">
+                <img src="lesin-abdulla-n4RMCylUf_w-unsplash.jpg" alt="Kerala Backwaters">
+            </div>
+             <div class="slide fade">
+                <img src="manchira.jpg" alt="Kerala Backwaters">
+            </div>
+             <div class="slide fade">
+                <img src="muhammed-shasal-a-v-nZrwS9yKNkM-unsplash.jpg" alt="Kerala Backwaters">
+            </div>
+        </div>
+        </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slideIndex++;
+
+            // Reset to first slide if at the end
+            if (slideIndex > slides.length) {slideIndex = 1}    
+
+            // Display the current slide
+            slides[slideIndex-1].style.display = "block";  
+
+            // Change image every 3 seconds
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+
+</body>
+</html>
